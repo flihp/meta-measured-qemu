@@ -1,2 +1,5 @@
 KMACHINE = "qemux86-64"
-KERNEL_FEATURES += "cfg/tpm-crb.scc"
+KERNEL_FEATURES_append = " \
+    cfg/tpm-crb.scc \
+    cfg/tpm-tis.scc \
+    "
